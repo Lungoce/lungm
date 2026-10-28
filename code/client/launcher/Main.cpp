@@ -1,7 +1,7 @@
 /*
- * This file is part of the CitizenFX project - http://citizen.re/
+ * This file is part of the Cfx project - https://cfx.re/
  *
- * See LICENSE and MENTIONS in the root of the source tree for information
+ * See LICENSE in the root of the source tree for information
  * regarding licensing.
  */
 
@@ -101,6 +101,7 @@ HANDLE g_uiExitEvent;
 
 bool IsUnsafeGraphicsLibrary();
 void MigrateCacheFormat202105();
+void MigrateNUIProfileStorage();
 void UI_DestroyTen();
 
 HMODULE tlsDll;
@@ -498,6 +499,7 @@ int RealMain()
 	if (initState->IsMasterProcess())
 	{
 		MigrateCacheFormat202105();
+		MigrateNUIProfileStorage();
 	}
 
 	if (InitializeExceptionHandler())

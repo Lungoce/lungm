@@ -1,7 +1,7 @@
 /*
- * This file is part of the CitizenFX project - http://citizen.re/
+ * This file is part of the Cfx project - https://cfx.re/
  *
- * See LICENSE and MENTIONS in the root of the source tree for information
+ * See LICENSE in the root of the source tree for information
  * regarding licensing.
  */
 
@@ -1538,7 +1538,7 @@ void InitializeDumpServer(int inheritedHandle, int parentPid)
 
 				taskDialogConfig.cbSize = sizeof(taskDialogConfig);
 				taskDialogConfig.hInstance = GetModuleHandle(nullptr);
-				taskDialogConfig.dwFlags = TDF_ENABLE_HYPERLINKS | TDF_EXPAND_FOOTER_AREA | TDF_SHOW_PROGRESS_BAR | TDF_CALLBACK_TIMER | TDF_USE_COMMAND_LINKS | TDF_EXPANDED_BY_DEFAULT;
+				taskDialogConfig.dwFlags = TDF_EXPAND_FOOTER_AREA | TDF_SHOW_PROGRESS_BAR | TDF_CALLBACK_TIMER | TDF_USE_COMMAND_LINKS | TDF_EXPANDED_BY_DEFAULT;
 				taskDialogConfig.dwCommonButtons = TDCBF_CLOSE_BUTTON;
 				taskDialogConfig.cButtons = 1;
 				taskDialogConfig.pButtons = buttons;
